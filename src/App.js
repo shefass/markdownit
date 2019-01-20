@@ -1,25 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      input: null
+    }
+  }
+  handleChange = (event) => {
+    this.setState({
+      input: event.target.value
+    })
+  }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <div id="textarea">
+          <textarea id="editor" value={this.state.input} onChange={this.handleChange}>
+          </textarea>
+        </div>
+        <div id="preview">
+          <MDReactComponent text={this.state.input} />
+        </div>
       </div>
     );
   }
