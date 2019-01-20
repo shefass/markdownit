@@ -22,7 +22,7 @@ class App extends Component {
           </textarea>
         </div>
         <div id="preview">
-          <MDReactComponent text={this.state.input} />
+          <MarkdownPreview value={this.state.input} />
         </div>
       </div>
     );
