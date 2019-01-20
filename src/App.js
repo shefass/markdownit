@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {  MarkdownPreview  } from 'react-marked-markdown';
+import { MarkdownPreview } from 'react-marked-markdown';
 import './App.css';
 
 class App extends Component {
