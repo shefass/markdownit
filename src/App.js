@@ -1,36 +1,38 @@
-import React, { Component } from 'react';
-import { MarkdownPreview } from 'react-marked-markdown';
-import './App.css';
+import React, { Component } from "react";
+import { MarkdownPreview } from "react-marked-markdown";
+import "./App.css";
 
 class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       input: null
-    }
+    };
   }
   componentDidMount() {
     this.setState({
       input: startInput
-    })
-    
+    });
   }
-  handleChange = (event) => {
+  handleChange = event => {
     this.setState({
       input: event.target.value
-    })
-  }
+    });
+  };
   render() {
     return (
       <div className="App">
         <div id="cont">
           <div id="textarea">
-            <textarea id="editor" value={this.state.input} onChange={this.handleChange}>
-            </textarea>
+            <textarea
+              id="editor"
+              value={this.state.input}
+              onChange={this.handleChange}
+            />
           </div>
-            <div id="preview">
-              <MarkdownPreview value={this.state.input} />
-            </div>
+          <div id="preview">
+            <MarkdownPreview value={this.state.input} />
+          </div>
         </div>
       </div>
     );
@@ -68,5 +70,5 @@ Contact shefass
 
 ---------------
 
-`
+`;
 export default App;
