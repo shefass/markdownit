@@ -12,40 +12,40 @@
   width: 90vw;
   display: flex;
   overflow: auto;
+  
 }
 #textarea {
- 
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 #preview {
   width: 50%;
+  
 }
 #editor {
   width: 94%;
   height: 94%;
- 
 }
+
 @media screen and (max-width: 500px) {
   #cont{ 
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    
   }
   #textarea {
-    height: 50%;
+    height: 40%;
     width: 100%;
    
   }
   #preview {
-    width: 100%;
-    height: 50%;
+    width: 97%;
+    height: 60%;
     margin-left: 10px;
-  }
-  #editor {
-    overflow: hidden;
   }
 }  

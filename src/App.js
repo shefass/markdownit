@@ -29,7 +29,7 @@ class App extends Component {
             </textarea>
           </div>
             <div id="preview">
-               <MarkdownPreview value={this.state.input} />
+              <MarkdownPreview value={this.state.input} />
             </div>
         </div>
       </div>
