@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { MarkdownPreview } from "react-marked-markdown";
+import {MarkdownPreview}  from "react-marked-markdown";
 import "./App.css";
 
 class App extends Component {
@@ -20,7 +20,7 @@ class App extends Component {
     });
   };
   render() {
-    return (
+    return (    
       <div className="App">
         <div id="cont">
           <div id="textarea">
@@ -47,13 +47,6 @@ Changes are automatically rendered as you type.
 
 * Implements [GitHub Flavored Markdown](https://github.github.com/gfm/)
 * Renders actual, "native" React DOM elements
-* Allows you to escape or skip HTML (try toggling the checkboxes above)
-
-## HTML block below
-
-<blockquote>
-  This blockquote will change based on the HTML settings above.
-</blockquote>
 
 
 ## Tables?
